@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Hace que el sitio responda correctamente en celulares -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Información básica para buscadores -->
+    <meta name="description"
+          content="Portfolio de Alan Quiroz, estudiante de Analista de Sistemas y desarrollador de software.">
+
+    <meta name="author" content="Alan Quiroz">
+
+    <title>Alan Quiroz | Developer</title>
+
+    <!-- Vite cargará desde acá todo nuestro JavaScript y CSS -->
+     <link rel="stylesheet" href="/scr/style.css">
+  <script type="module" crossorigin src="/alan-quiroz-portfolio/assets/index-BncXht9c.js"></script>
+  <link rel="stylesheet" crossorigin href="/alan-quiroz-portfolio/assets/index-D4TP3VNg.css">
+</head>
+
+<body>
+
+<!-- =====================================================
+     CURSOR PERSONALIZADO
+     Se mueve mediante JavaScript y cambia sobre enlaces.
+====================================================== -->
+
+<div class="cursor" aria-hidden="true">
+    <span class="cursor__text">VIEW</span>
+</div>
+
+
+<!-- =====================================================
+     PRELOADER
+     Primera animación al entrar al portfolio.
+====================================================== -->
+
+<div class="loader" id="loader">
+
+    <div class="loader__content">
+
+        <div class="loader__top">
+            <span>SYSTEM</span>
+            <span>東京 / JP</span>
+        </div>
+
+        <div class="loader__number">
+            <span id="loaderNumber">00</span>
+            <small>%</small>
+        </div>
+
+        <div class="loader__line">
+            <span id="loaderProgress"></span>
+        </div>
+
+        <div class="loader__bottom">
+            <span>ALAN QUIROZ</span>
+            <span>INITIALIZING</span>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     NAVEGACIÓN PRINCIPAL
+====================================================== -->
+
+<header class="header">
+
+    <a href="#home" class="logo magnetic" aria-label="Inicio">
+        <span>A</span>
+        <span>Q.</span>
+    </a>
+
+    <nav class="nav" aria-label="Navegación principal">
+
+        <a href="#about">Sobre mí</a>
+        <a href="#skills">Tecnologías</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#terminal">Terminal</a>
+        <a href="#contact">Contacto</a>
+
+    </nav>
+
+    <button class="menu-toggle"
+            id="menuToggle"
+            aria-label="Abrir menú"
+            aria-expanded="false">
+
+        <span></span>
+        <span></span>
+
+    </button>
+
+</header>
+
+
+<main>
+
+<!-- =====================================================
+     HERO
+     Presentación principal.
+     El canvas será utilizado por Three.js.
+====================================================== -->
+
+<section class="hero section" id="home">
+
+    <canvas id="heroCanvas" aria-hidden="true"></canvas>
+
+    <div class="hero__noise"></div>
+
+    <div class="hero__meta">
+        <span>ARGENTINA</span>
+        <span>2026</span>
+    </div>
+
+    <div class="hero__japanese">
+        デジタル開発者
+    </div>
+
+    <div class="hero__content">
+
+        <p class="eyebrow reveal-text">
+            SYSTEMS ANALYST STUDENT / DEVELOPER
+        </p>
+
+        <h1 class="hero__title">
+            <span class="hero-line">ALAN</span>
+            <span class="hero-line outline">QUIROZ</span>
+        </h1>
+
+        <div class="hero__description">
+
+            <p>
+                Desarrollador en formación, interesado en frontend y backend, enfocado en aprender, construir proyectos reales y crecer hacia el desarrollo Full Stack.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="hero__location">
+
+        <span>Villa Constitución</span>
+        <span>Santa Fe / Argentina</span>
+
+    </div>
+
+    <a href="#about" class="scroll-indicator magnetic">
+
+        <span>SCROLL</span>
+
+        <div class="scroll-indicator__line"></div>
+
+    </a>
+
+</section>
+
+
+<!-- =====================================================
+     MARQUEE
+     Texto horizontal infinito.
+====================================================== -->
+
+<section class="marquee" aria-hidden="true">
+
+    <div class="marquee__track">
+
+        <span>DEVELOPMENT</span>
+        <span>開発</span>
+        <span>CREATIVE CODE</span>
+        <span>INTERACTION</span>
+        <span>DESIGN</span>
+
+        <span>DEVELOPMENT</span>
+        <span>開発</span>
+        <span>CREATIVE CODE</span>
+        <span>INTERACTION</span>
+        <span>DESIGN</span>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SOBRE MÍ
+====================================================== -->
+
+<section class="about section" id="about">
+
+    <div class="section-number">
+        01
+    </div>
+
+    <div class="section-heading">
+
+        <p class="section-label">
+            私について / ABOUT
+        </p>
+
+        <h2 class="section-title reveal">
+            Código con
+            <span>identidad.</span>
+        </h2>
+
+    </div>
+
+    <div class="about__grid">
+
+        <div class="about__kanji" aria-hidden="true">
+            開発
+        </div>
+
+        <div class="about__text reveal">
+
+            <p class="about__lead">
+            Soy Alan Quiroz, estudiante de Analista de Sistemas y desarrollador web en formación, con interés en frontend y backend y enfoque en crecer hacia un perfil Full Stack.
+            </p>
+
+            <p>
+                Actualmente desarrollo proyectos utilizando tecnologías
+                como PHP, JavaScript, Java, MySQL, HTML y CSS.
+            </p>
+
+            <p>
+                Mi objetivo es combinar programación sólida con interfaces
+                que tengan personalidad, movimiento y una experiencia
+                visual diferente.
+            </p>
+
+        </div>
+
+        <div class="about__facts reveal">
+
+            <article>
+                <span>01</span>
+                <p>Analista de Sistemas</p>
+            </article>
+
+            <article>
+                <span>02</span>
+                <p>Full Stack en formación</p>
+            </article>
+
+            <article>
+                <span>03</span>
+                <p>Villa Constitución</p>
+            </article>
+
+            <article>
+                <span>04</span>
+                <p>Argentina</p>
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     TECNOLOGÍAS
+====================================================== -->
+
+<section class="skills section" id="skills">
+
+    <div class="section-number">
+        02
+    </div>
+
+    <div class="section-heading">
+
+        <p class="section-label">
+            技術 / TECHNOLOGIES
+        </p>
+
+        <h2 class="section-title reveal">
+            Mi arsenal
+            <span>digital.</span>
+        </h2>
+
+    </div>
+
+    <div class="skills__list">
+
+        <article class="skill-row">
+            <span class="skill-index">01</span>
+            <h3>HTML</h3>
+            <span>STRUCTURE</span>
+        </article>
+
+        <article class="skill-row">
+            <span class="skill-index">02</span>
+            <h3>CSS</h3>
+            <span>INTERFACE</span>
+        </article>
+
+        <article class="skill-row">
+            <span class="skill-index">03</span>
+            <h3>JavaScript</h3>
+            <span>INTERACTION</span>
+        </article>
+
+        <article class="skill-row">
+            <span class="skill-index">04</span>
+            <h3>PHP</h3>
+            <span>BACKEND</span>
+        </article>
+
+        <article class="skill-row">
+            <span class="skill-index">05</span>
+            <h3>MySQL</h3>
+            <span>DATABASE</span>
+        </article>
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PROYECTOS
+     Las tarjetas son generadas automáticamente desde
+     src/data/projects.js.
+====================================================== -->
+
+<section class="projects section" id="projects">
+
+    <div class="section-number">
+        03
+    </div>
+
+    <div class="section-heading">
+
+        <p class="section-label">
+            制作 / SELECTED WORK
+        </p>
+
+        <h2 class="section-title reveal">
+            Proyectos
+            <span>seleccionados.</span>
+        </h2>
+
+    </div>
+
+    <div class="swiper project-slider">
+
+        <div class="swiper-wrapper" id="projectContainer"></div>
+
+        <div class="project-navigation">
+
+            <button class="project-prev magnetic" aria-label="Proyecto anterior">
+                ←
+            </button>
+
+            <div class="swiper-pagination"></div>
+
+            <button class="project-next magnetic" aria-label="Proyecto siguiente">
+                →
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FRASE / SEPARADOR CINEMATOGRÁFICO
+====================================================== -->
+
+<section class="statement section">
+
+    <p>
+        SOFTWARE
+    </p>
+
+    <h2>
+        DESIGN THE
+        <span>LOGIC.</span>
+        CODE THE
+        <span>EXPERIENCE.</span>
+    </h2>
+
+    <div class="statement__jp">
+        技術と創造
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     TERMINAL INTERACTIVA
+====================================================== -->
+
+<section class="terminal-section section" id="terminal">
+
+    <div class="section-number">
+        04
+    </div>
+
+    <div class="section-heading">
+
+        <p class="section-label">
+            TERMINAL / CLI
+        </p>
+
+        <h2 class="section-title reveal">
+            Hablá con el
+            <span>sistema.</span>
+        </h2>
+
+    </div>
+
+    <div class="terminal reveal">
+
+        <div class="terminal__header">
+
+            <div class="terminal__dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <span>
+                alan@portfolio
+            </span>
+
+            <span>
+                bash
+            </span>
+
+        </div>
+
+        <div class="terminal__body"
+             id="terminalOutput"
+             aria-live="polite">
+
+            <div class="terminal-line">
+                <span class="terminal-muted">
+                    Alan Portfolio OS [Version 1.0]
+                </span>
+            </div>
+
+            <div class="terminal-line">
+                Escribí
+                <strong>help</strong>
+                para ver los comandos disponibles.
+            </div>
+
+        </div>
+
+        <form class="terminal__input-line"
+              id="terminalForm">
+
+            <label for="terminalInput">
+                alan@portfolio:~$
+            </label>
+
+            <input
+                id="terminalInput"
+                type="text"
+                autocomplete="off"
+                spellcheck="false"
+                aria-label="Terminal"
+            >
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CONTACTO
+====================================================== -->
+
+<section class="contact section" id="contact">
+
+    <div class="contact__jp" aria-hidden="true">
+        接触
+    </div>
+
+    <p class="section-label">
+        05 / CONTACT
+    </p>
+
+    <h2 class="contact__title">
+
+        ¿Creamos algo
+
+        <span>
+            increíble?
+        </span>
+
+    </h2>
+
+    <a
+        class="contact__email magnetic"
+        href="mailto:alanquiroz969@gmail.com"
+    >
+        alanquiroz969@gmail.com
+        <span>↗</span>
+    </a>
+
+    <div class="contact__links">
+
+        <a href="https://github.com/"
+           target="_blank"
+           rel="noopener noreferrer">
+            GitHub ↗
+        </a>
+
+        <a href="#home">
+            Volver arriba ↑
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+====================================================== -->
+
+<footer class="footer">
+
+    <span>
+        © <span id="year"></span> Alan Quiroz
+    </span>
+
+    <span>
+        Villa Constitución / Argentina
+    </span>
+
+    <span>
+        BUILT WITH CODE + COFFEE
+    </span>
+
+</footer>
+
+</body>
+
+</html>
